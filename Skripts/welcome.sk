@@ -1,0 +1,23 @@
+# Created by waikboi
+# https://github.com/waikboidev/PublicSkripts/
+
+options:
+	
+	# Custom first join color?
+	CFJC: true
+
+
+on join:
+	set join message to "&8[&a+&8] &7%player%"
+	
+on first join:
+	if {@CFJC} is true:
+		set join message to "&8[&6+&8] &7%player%"
+	else:
+		set join message to "&8[&a+&8] &7%player%"
+
+on quit:
+	set quit message to "&8[&c-&8] &7%player%"
+
+
+
